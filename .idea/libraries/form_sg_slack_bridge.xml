@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="form-sg-slack-bridge">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.serverless/form-sg-slack-bridge.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

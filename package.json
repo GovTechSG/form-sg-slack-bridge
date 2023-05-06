@@ -1,0 +1,24 @@
+{
+  "name": "form-sg-slack-bridge",
+  "version": "1.0.0",
+  "description": "Posts FormSG Submissions in Slack",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aniruddha ADHIKARY <aniruddha_adhikary@tech.gov.sg>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.115",
+    "@types/lodash": "^4.14.194",
+    "@types/node": "^16.18.25",
+    "serverless-offline": "^12.0.4",
+    "serverless-plugin-typescript": "^2.1.4",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@opengovsg/formsg-sdk": "^0.10.0",
+    "@slack/bolt": "^3.13.1",
+    "lodash": "^4.17.21"
+  }
+}
