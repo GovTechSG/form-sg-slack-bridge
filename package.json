@@ -4,7 +4,8 @@
   "description": "Posts FormSG Submissions in Slack",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "author": "Aniruddha ADHIKARY <aniruddha_adhikary@tech.gov.sg>",
   "license": "MIT",
@@ -12,6 +13,9 @@
     "@types/aws-lambda": "^8.10.115",
     "@types/lodash": "^4.14.194",
     "@types/node": "^16.18.25",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
     "serverless-plugin-typescript": "^2.1.4",
     "typescript": "^5.0.4"
   },
@@ -19,5 +23,11 @@
     "@opengovsg/formsg-sdk": "^0.10.0",
     "@slack/bolt": "^3.13.1",
     "lodash": "^4.17.21"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

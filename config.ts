@@ -14,7 +14,7 @@ export const POST_URI = process.env.POST_URI;
  * So I need not add new formIds and redeploy. The keys should be comma separated.
  * Example: "secretKey1,secretKey2" (Don't include the quotes)
  */
-export const FORM_SECRET_KEYS = process.env.FORM_SECRET_KEYS?.split(',') || [];
+export const FORM_SECRET_KEYS = process.env.FORM_SECRET_KEYS?.split(",") || [];
 
 /**
  * Optionally, you can whitelist the fields you want to post to Slack, customizable to the formId
@@ -24,7 +24,7 @@ export const FORM_SECRET_KEYS = process.env.FORM_SECRET_KEYS?.split(',') || [];
  * Example: {"formId": ["fieldId1", "fieldId2"]}
  */
 export const FORM_WHITELISTED_FIELD_IDS: Record<string, string> = JSON.parse(
-    process.env.FORM_WHITELISTED_FIELD_IDS || '{}'
+  process.env.FORM_WHITELISTED_FIELD_IDS || "{}"
 );
 
 /**
@@ -34,7 +34,7 @@ export const FORM_WHITELISTED_FIELD_IDS: Record<string, string> = JSON.parse(
  * channel.
  */
 export const SLACK_BOT_CHANNEL_ID_MAPPING: Record<string, string> = JSON.parse(
-    process.env.SLACK_BOT_CHANNEL_ID || '{}'
+  process.env.SLACK_BOT_CHANNEL_ID || "{}"
 );
 export const SLACK_SIGNING_SECRET = process.env.SLACK_SIGNING_SECRET;
 export const SLACK_BOT_TOKEN = process.env.SLACK_BOT_TOKEN;
